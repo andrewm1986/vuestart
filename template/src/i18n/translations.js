@@ -1,7 +1,8 @@
 module.exports = {
-  lang: {
-    english: { en: "english", fr: "anglais",
+  welcome: {
+    msg: {
+      en: "Welcome to your Vue.js app !",
+      fr: "Bienvenue dans votre application Vue.js !",
     },
-    french: { en: "french", fr: "français",},
   },
 };
