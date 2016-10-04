@@ -1,6 +1,13 @@
 <template>
   <div class="well">
-    <h1>\{{msg}}</h1>
+    <div class="row">
+      <div class="col-sm-6 text-right">
+        <img class="logo" src="./assets/logo.png">
+      </div>
+      <div class="col-sm-6">
+        <h1>\{{msg}}</h1>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -8,7 +15,7 @@
 export default {
   data () {
     return {
-      msg: 'Hello Vue!'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+      msg: 'Hello Vue !'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}

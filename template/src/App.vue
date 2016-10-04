@@ -1,9 +1,10 @@
 <template>
   <div id="app" class="container text-center">
+    <br />
     <navbar></navbar>
-    <img class="logo" src="./assets/logo.png">
+    <hr />
     <router-view></router-view>
-    <p> Welcome to your Vue.js app ! </p>
+    <p> \{{$root.t('welcome.msg')}} </p>
     <p>
       To get a better understanding of how this boilerplate works, check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
@@ -46,7 +47,7 @@ export default {
     color: #42b983
   p
     text-align: justify
-  logo
+  .logo
     width: 100px
     height: 100px
 </style>

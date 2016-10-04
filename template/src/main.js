@@ -26,7 +26,7 @@ new Vue({
     require('./mixins/vue-i18n-mixin.js'),
   ],
   data: {
-    locale: 'fr',
+    locale: 'en',
     fallbackLocale: 'en',
   },
   translations: require('./i18n/translations.js'),
