@@ -5,7 +5,7 @@
         <img class="logo" src="../assets/logo.png">
       </div>
       <div class="col-sm-7 text-left">
-        <h1>{{msg}}</h1>
+        <h1>\{{$root.t('hello.msg')}}</h1>
       </div>
     </div>
   </div>
@@ -13,11 +13,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      msg: 'Hello Vue !'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-    }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 

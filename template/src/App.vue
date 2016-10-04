@@ -6,13 +6,13 @@
     <router-view></router-view>
     <p> \{{$root.t('welcome.msg')}} </p>
     <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
+      \{{$root.t('welcome.phrase1')}}
+      <a href="http://vuejs-templates.github.io/webpack" target="_blank">\{{$root.t('welcome.doc')}}</a>.
+      \{{$root.t('welcome.phrase2')}}
+      <a href="http://webpack.github.io/" target="_blank">Webpack</a> \{{$root.t('welcome.and')}}
       <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
+      \{{$root.t('welcome.phrase3')}}
+      <a href="https://github.com/ssouron/vuestart" target="_blank">\{{$root.t('welcome.repository')}}</a>.
     </p>
     <p>
       You may also want to checkout
