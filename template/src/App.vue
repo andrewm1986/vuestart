@@ -1,10 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class=text-center>
+    <navbar></navbar>
     <img class="logo" src="./assets/logo.png">
     <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
+    <p> Welcome to your Vue.js app! </p>
     <p>
       To get a better understanding of how this boilerplate works, check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
@@ -24,41 +23,31 @@
 
 <script>
 import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Navbar from './components/Navbar'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default {
-  components: {
-    Hello{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  components: { Hello, Navbar{{#if_eq lintConfig "airbnb"}},{{/if_eq}} }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
-<style>
-html {
-  height: 100%;
-}
+<style lang="sass">
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+  // Bootstrap
+  $icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+  $link-color: #42b983;
+  $brand-success: #42b983;
+  @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
+  // font awesome
+  $fa-font-path: '../node_modules/font-awesome/fonts/';
+  @import 'node_modules/font-awesome/scss/font-awesome';
 
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
-
-.logo {
-  width: 100px;
-  height: 100px
-}
+  //some styling adaptations
+  h1
+    color: #42b983
+  p
+    text-align: justify
+  logo
+    width: 100px
+    height: 100px
 </style>
