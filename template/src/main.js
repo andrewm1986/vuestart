@@ -22,6 +22,16 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 // ======================== Vue Instance =======================
 /* eslint-disable no-new */
 new Vue({
+  mixins: [
+    require('./mixins/vue-i18n-mixin.js'),
+  ],
+  data: {
+    locale: 'fr',
+    fallbackLocale: 'en',
+  },
+  translations: require('./i18n/translations.js'),
+  router,
+  store,
   el: '#app',
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
