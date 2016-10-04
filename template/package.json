@@ -1,6 +1,6 @@
 {
   "name": "{{ name }}",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
@@ -13,7 +13,13 @@
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}
   },
   "dependencies": {
-    "vue": "^2.0.1"
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.1",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.0.0",
+    "vuex": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -75,8 +81,10 @@
     "nightwatch": "^0.9.8",
     "selenium-server": "2.53.1",
     {{/e2e}}
+    "node-sass": "^3.10.1",
     "opn": "^4.0.2",
     "ora": "^0.3.0",
+    "sass-loader": "^4.0.2",
     "shelljs": "^0.7.4",
     "url-loader": "^0.5.7",
     "vue-loader": "^9.4.0",
