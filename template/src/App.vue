@@ -1,9 +1,9 @@
 <template>
-  <div id="app" class=text-center>
+  <div id="app" class="container text-center">
     <navbar></navbar>
     <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p> Welcome to your Vue.js app! </p>
+    <router-view></router-view>
+    <p> Welcome to your Vue.js app ! </p>
     <p>
       To get a better understanding of how this boilerplate works, check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
@@ -22,11 +22,10 @@
 </template>
 
 <script>
-import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import Navbar from './components/Navbar'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default {
-  components: { Hello, Navbar{{#if_eq lintConfig "airbnb"}},{{/if_eq}} }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  components: { Navbar{{#if_eq lintConfig "airbnb"}},{{/if_eq}} }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 

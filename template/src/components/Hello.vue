@@ -1,12 +1,12 @@
 <template>
   <div class="well">
-    <h1>\ {{ msg }}</h1>
+    <h1>\ {{ msg }} \</h1>
   </div>
 </template>
 
 <script>
 export default {
-  data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
+  data () {
     return {
       msg: 'Hello Vue!'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
