@@ -1,11 +1,11 @@
 <template>
   <div class="well">
     <div class="row">
-      <div class="col-sm-6 text-right">
-        <img class="logo" src="./assets/logo.png">
+      <div class="col-sm-5 text-right">
+        <img class="logo" src="../assets/logo.png">
       </div>
-      <div class="col-sm-6">
-        <h1>\{{msg}}</h1>
+      <div class="col-sm-7 text-left">
+        <h1>{{msg}}</h1>
       </div>
     </div>
   </div>
