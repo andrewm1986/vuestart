@@ -1,5 +1,5 @@
 module.exports = {
   msg: {
-    en: "Hello", fr: "Bonjour",
+    en: "Hello Vue !", fr: "Bonjour Vue !",
   },
 };
