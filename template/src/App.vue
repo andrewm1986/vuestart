@@ -2,13 +2,16 @@
   <div id="app" class="container text-center">
     <br />
     <navbar></navbar>
-    <br /><br />
+    <br />
     <router-view></router-view>
-    <h4> Welcome to your Vue.js app ! </h4>
+    <br /><br />
+    <h4> Welcome to your Vue.js app </h4>
     <hr />
     <p>
       To get a better understanding of how this boilerplate works, please check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
+      <a href="https://github.com/ssouron/vuestart/blob/master/README.md" target="_blank">its Readme file</a>
+      , and the original template detailed
+      <a href="http://vuejs-templates.github.io/webpack" target="_blank">documentation</a>
       It is also recommended to go through the docs for
       <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
       <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
