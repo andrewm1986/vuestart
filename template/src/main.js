@@ -23,7 +23,7 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 /* eslint-disable no-new */
 new Vue({
   mixins: [
-    require('./mixins/vue-i18n-mixin.js'),
+    require('vue-i18n-mixin'),
   ],
   data: {
     locale: 'en',
