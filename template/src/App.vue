@@ -34,7 +34,7 @@
           : State and event store management.
         </li>
         <li>
-          <b><a href="https://github.com/rayfranco/vue-i18n-mixin" target="_blank">Vue i18n Mixin</a></b>
+          <b><a href="https://github.com/ssouron/vue-i18n-mixin/tree/0.2.0" target="_blank">Vue i18n Mixin</a></b>
           : Internationalisation plugin.
         </li>
         <li>
