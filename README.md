@@ -1,4 +1,4 @@
-# vuestart boilerplate
+# vuestart boilerplate v0.3
 
 A full-featured Vue 2.0 + Webpack setup with hot-reload, lint-on-save, unit testing, CSS & SASS extraction.
 
