@@ -4,6 +4,7 @@ import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 const state = {
+  count: 0,
   appTitle: '{{ name }}',
   appVersion: '{{ version }}'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }

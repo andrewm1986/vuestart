@@ -4,21 +4,46 @@
     <navbar></navbar>
     <hr />
     <router-view></router-view>
-    <p> \{{$root.t('welcome.msg')}} </p>
+    <p> Welcome to your Vue.js app ! </p>
     <p>
-      \{{$root.t('welcome.phrase1')}}
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">\{{$root.t('welcome.doc')}}</a>.
-      \{{$root.t('welcome.phrase2')}}
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> \{{$root.t('welcome.and')}}
+      To get a better understanding of how this boilerplate works, please check out
+      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
+      It is also recommended to go through the docs for
+      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
       <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      \{{$root.t('welcome.phrase3')}}
-      <a href="https://github.com/ssouron/vuestart" target="_blank">\{{$root.t('welcome.repository')}}</a>.
+      If you have any issues with the setup, please file an issue at this boilerplate's
+      <a href="https://github.com/ssouron/vuestart" target="_blank">repository</a>.
     </p>
     <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
+      Several external addins or libraries are implemented in this rig. You can checkout their pages to find documentation and related stuff :
+      <ul>
+        <li>
+          <b><a href="https://github.com/vuejs/vue-resource" target="_blank">Vue Resource</a></b>
+          : Http and Ajax requests from your Vue app.
+        </li>
+        <li>
+          <b><a href="https://github.com/vuejs/vue-router" target="_blank">Vue Router</a></b>
+          : Routing without page reloading.
+        </li>
+        <li>
+          <b><a href="https://github.com/vuejs/vuex/" target="_blank">VueX</a></b>
+          : State and event store management.
+        </li>
+        <li>
+          <b><a href="https://github.com/rayfranco/vue-i18n-mixin" target="_blank">Vue i18n Mixin</a></b>
+          : Internationalisation plugin.
+        </li>
+        <li>
+          <b><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></b>
+          : SASS version of the styling framework, including components.
+        </li>
+        <li>
+          <b><a href="http://fontawesome.io/" target="_blank">Font Awesome</a></b>
+          : SASS version of the icon provider.
+        </li>
+      </ul>
     </p>
+    <h3> Build an amazing application ! </h3>
   </div>
 </template>
 
