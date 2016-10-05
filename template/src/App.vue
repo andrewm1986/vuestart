@@ -2,9 +2,9 @@
   <div id="app" class="container text-center">
     <br />
     <navbar></navbar>
-    <hr />
+    <br /><br />
     <router-view></router-view>
-    <p> Welcome to your Vue.js app ! </p>
+    <h4> Welcome to your Vue.js app ! </h4>
     <hr />
     <p>
       To get a better understanding of how this boilerplate works, please check out
