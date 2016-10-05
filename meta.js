@@ -18,7 +18,13 @@ module.exports = {
       "type": "string",
       "required": false,
       "message": "Project description",
-      "default": "A Vue.js project"
+      "default": "A Vue.js 2.0 project"
+    },
+    "version": {
+      "type": "string",
+      "required": false,
+      "message": "Starting version number",
+      "default": "0.0.1"
     },
     "author": {
       "type": "string",

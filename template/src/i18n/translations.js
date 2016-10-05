@@ -1,7 +1,8 @@
 module.exports = {
-  lang: {
-    english: { en: "english", fr: "anglais",
+  namespace: {
+    item: {
+      en: "English translation",
+      fr: "French translation",
     },
-    french: { en: "french", fr: "français",},
   },
 };

@@ -4,8 +4,9 @@ import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 const state = {
-  appTitle: 'Vue Start',
-  appVersion: '0.1.0'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  count: 0,
+  appTitle: '{{ name }}',
+  appVersion: '{{ version }}'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }
 
 const mutations = {

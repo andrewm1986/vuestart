@@ -1,32 +1,59 @@
 <template>
-  <div id="app" class=text-center>
+  <div id="app" class="container text-center">
+    <br />
     <navbar></navbar>
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p> Welcome to your Vue.js app! </p>
+    <br /><br />
+    <router-view></router-view>
+    <h4> Welcome to your Vue.js app ! </h4>
+    <hr />
     <p>
-      To get a better understanding of how this boilerplate works, check out
+      To get a better understanding of how this boilerplate works, please check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
       It is also recommended to go through the docs for
       <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
       <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
       If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
+      <a href="https://github.com/ssouron/vuestart" target="_blank">repository</a>.
     </p>
     <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
+      Several external addins or libraries are implemented in this rig. You can checkout their pages to find documentation and related stuff :
+      <ul>
+        <li>
+          <b><a href="https://github.com/vuejs/vue-resource" target="_blank">Vue Resource</a></b>
+          : Http and Ajax requests from your Vue app.
+        </li>
+        <li>
+          <b><a href="https://github.com/vuejs/vue-router" target="_blank">Vue Router</a></b>
+          : Routing without page reloading.
+        </li>
+        <li>
+          <b><a href="https://github.com/vuejs/vuex/" target="_blank">VueX</a></b>
+          : State and event store management.
+        </li>
+        <li>
+          <b><a href="https://github.com/rayfranco/vue-i18n-mixin" target="_blank">Vue i18n Mixin</a></b>
+          : Internationalisation plugin.
+        </li>
+        <li>
+          <b><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></b>
+          : SASS version of the styling framework, including components.
+        </li>
+        <li>
+          <b><a href="http://fontawesome.io/" target="_blank">Font Awesome</a></b>
+          : SASS version of the icon provider.
+        </li>
+      </ul>
     </p>
+    <hr />
+    <h4> Build an amazing application ! </h4>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import Navbar from './components/Navbar'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default {
-  components: { Hello, Navbar{{#if_eq lintConfig "airbnb"}},{{/if_eq}} }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  components: { Navbar{{#if_eq lintConfig "airbnb"}},{{/if_eq}} }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
@@ -47,7 +74,4 @@ export default {
     color: #42b983
   p
     text-align: justify
-  logo
-    width: 100px
-    height: 100px
 </style>
