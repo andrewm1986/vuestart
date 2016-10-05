@@ -5,7 +5,7 @@
         <img class="logo" src="../assets/logo.png">
       </div>
       <div class="col-sm-7 text-left">
-        <h1>\{{ msg )}}</h1>
+        <h1>\{{ msg }}</h1>
       </div>
     </div>
   </div>
@@ -14,7 +14,9 @@
 <script>
 export default {
   data () {
-    msg: 'Hello Vue !'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    return {
+      msg: 'Hello Vue !'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
@@ -23,4 +25,7 @@ export default {
 <style lang="sass" scoped>
   h1
     color: #42b983
+  .logo
+    width: 80px
+    height: 80px
 </style>

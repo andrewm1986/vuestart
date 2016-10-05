@@ -5,6 +5,7 @@
     <hr />
     <router-view></router-view>
     <p> Welcome to your Vue.js app ! </p>
+    <hr />
     <p>
       To get a better understanding of how this boilerplate works, please check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
@@ -43,7 +44,8 @@
         </li>
       </ul>
     </p>
-    <h3> Build an amazing application ! </h3>
+    <hr />
+    <h4> Build an amazing application ! </h4>
   </div>
 </template>
 
@@ -72,7 +74,4 @@ export default {
     color: #42b983
   p
     text-align: justify
-  .logo
-    width: 100px
-    height: 100px
 </style>
