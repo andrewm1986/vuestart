@@ -1,4 +1,4 @@
-# vuestart boilerplate v0.3
+# vuestart boilerplate v0.4
 
 A full-featured Vue 2.0 + Webpack setup with hot-reload, lint-on-save, unit testing, CSS & SASS extraction.
 
@@ -6,7 +6,7 @@ This template has been build over a robust one (['webpack' from vuejs-templates]
 * [Vue Resource](https://github.com/vuejs/vue-resource) for Ajax and Cross domain requests to deal with APIs and Web services.
 * [Vue Router](https://github.com/vuejs/vue-router) for app routing without browser reloading.
 * [VueX](https://github.com/vuejs/vuex/) for application state and events store management.
-* [Vue i18n Mixin](https://github.com/ssouron/vue-i18n-mixin/tree/0.2.0) for internationalisation.
+* [Vue Translate](https://github.com/javisperez/vuetranslate) for internationalisation.
 * [Bootstrap](http://getbootstrap.com/) for styling, in its SASS version, with components and icons.
 * [Font Awesome](http://fontawesome.io/) also in SASS version, for easy-to-use static and animated icons.
 
@@ -68,9 +68,9 @@ The `<router-view>` and `<router-link>` tags are accessible from every component
 
 The `$store` object is available in every component. The store configuration, states, mutations and actions are all to be defined in the `/src/store.js` file. The base rig includes `appTitle` and `appVersion` data in the state, reflecting what has been entered during the initial vue-cli setup. It also includes for exemple purpose a counter data with asynchronous incrementation implemented. See more at [VueX documentation](http://vuex.vuejs.org/en/index.html).
 
-### Vue i18n Mixin
+### Vue Translate
 
-Based on a fork of the [original vue-i18n-mixin](https://github.com/rayfranco/vue-i18n-mixin), which adds a fallback locale capability to the original mixin. You can see the basic usage at the [repository page](https://github.com/ssouron/vue-i18n-mixin/tree/0.2.0). `$root.t` is available from every component, and you can define translations in the `/src/i18n/translations.js` file, according to the exemple inserted.
+A `$translate` object is available within every component, and you have access to the `t(...)` function and the `v-translate` attribute, as shown in the [plugin page](https://github.com/javisperez/vuetranslate). The `locales:` object can be populated from each component, directly or by requesting an external file with a `module.exports`.
 
 ### Bootstrap
 

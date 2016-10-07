@@ -1,5 +1,10 @@
 module.exports = {
-  msg: {
-    en: "Hello Vue !", fr: "Bonjour Vue !",
+  fr: {
+    "Hello Vue !": "Bonjour Vue !",
+    "Change Language": "Changer de langue"
   },
+  es: {
+    "Hello Vue !": "¡ Hola Vue !",
+    "Change Language": "Cambiar de lengua"
+  }
 };
