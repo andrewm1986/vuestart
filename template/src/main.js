@@ -6,8 +6,10 @@
 // =============== Base libraries integration ==================
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import VueTranslate from 'vue-translate-plugin'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(VueTranslate){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 import store from './store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
@@ -22,14 +24,6 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 // ======================== Vue Instance =======================
 /* eslint-disable no-new */
 new Vue({
-  mixins: [
-    require('vue-i18n-mixin'),
-  ],
-  data: {
-    locale: 'en',
-    fallbackLocale: 'en',
-  },
-  translations: require('./i18n/translations.js'),
   router,
   store,
   el: '#app',

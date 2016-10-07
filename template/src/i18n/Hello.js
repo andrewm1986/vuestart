@@ -1,5 +1,4 @@
 module.exports = {
-  msg: {
-    en: "Hello Vue !", fr: "Bonjour Vue !",
-  },
+  fr: { "Hello Vue !": "Bonjour Vue !" },
+  es: { "Hello Vue !": "¡ Hola Vue !" }
 };
