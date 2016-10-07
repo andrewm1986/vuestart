@@ -8,6 +8,12 @@
         <h1 v-translate>Hello Vue !</h1>
       </div>
     </div>
+    <div class="row text-center">
+      <span v-translate>Change Language</span> : &nbsp;&nbsp;&nbsp;
+      <button class="btn btn-default btn-xs" @click="$translate.setLang('en')">EN</button>
+      <button class="btn btn-default btn-xs" @click="$translate.setLang('fr')">FR</button>
+      <button class="btn btn-default btn-xs" @click="$translate.setLang('es')">ES</button>
+    </div>
   </div>
 </template>
 
