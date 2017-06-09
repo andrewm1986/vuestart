@@ -10,7 +10,7 @@ const state = {
 }
 
 const mutations = {
-  INCREMENT(state) { state.count++ }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  INCREMENT(state) { state.count++ }
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 const actions = {
